@@ -1,72 +1,115 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Customer Feedback 2025</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+  <title>Customer Feedback 2025</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <!-- Font Awesome Icon Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            *{
-                text-align: center;
-            }
-        .checked {
-        color: orange;
-        }
-        .card{
-            height:120px;
-            box-shadow: 10px 10px 8px #888888;
-            border-radius: 15px;
-        }
-</style>
-    </head>
-    <body>
-        <div class="container">
-        <h1>Customer Feedback 2025</h1>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      text-align: center;
+    }
+    .checked {
+      color: orange;
+    }
+    .card {
+      height: 400px;
+      box-shadow: 10px 10px 8px #888888;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+      background-image: none;
+      color: #000;
+      font-size: 30px;
+      top: 45%;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <img src="./p2.png" style="width: 250px;" />
+    </div>
+    <div class="col-md-8">
+      <h1><b>Customer Feedback 2025</b></h1>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- ✅ Enable auto-slide using data-ride and data-interval -->
+  <div id="cardCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="item active">
         <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        <img src='./bajaj auto.jpg'/ style="height: 100px;">
-                    </div>
-                    <div class="card-body">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+          <!-- Bajaj Auto -->
+           <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./bajaj auto.jpg" style="height: 150px;" />
+              </div>
+              <div class="card-footer">
+                <h1><b>Bajaj Auto</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>"Very much satisfied with the support team and the kind of support being provided by aligned team members.Team is always available as per requirement and sort out the issues in short span of time"</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    </div>
-                </div>
+      <!-- Slide 2 -->
+      <div class="item">
+        <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./klii.jpg" style="height: 150px;" />
+              </div>
+              <div class="card-footer">
+                <h1><b>KLI</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star-half fa-2x checked"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>"Very much satisfied with the support team and the kind of support being provided by aligned team members.Team is always available as per requirement and sort out the issues in short span of time"</h3>
+              </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
-            
-            
+          </div>
+          <!-- Add remaining 11 cards here -->
         </div>
-        </div>
-    </body>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
 </html>
