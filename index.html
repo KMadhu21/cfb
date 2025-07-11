@@ -21,11 +21,25 @@
       color: orange;
     }
     .card {
-      height: 400px;
-      border-radius: 15px;
+      height: 450px;
+      border-radius: 20px;
       margin-bottom: 20px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      background-color: #fff;
+      border: 1px solid #ddd; /* base border */
+      border-top: 6px solid #007bff; /* highlight top border */
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      position: relative;
+      z-index: 10;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+
     .carousel-control.left,
     .carousel-control.right {
       background-image: none;
@@ -33,8 +47,11 @@
       font-size: 30px;
       top: 45%;
     }
-    h1,h3{
+    h1,h3,h4{
       font-family: "Times New Roman", Times, serif;
+    }
+    h4{
+      font-weight: bold;
     }
   </style>
 </head>
@@ -51,7 +68,7 @@
   <br><br>
 
   <!-- ✅ Enable auto-slide using data-ride and data-interval -->
-  <div id="cardCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+  <div id="cardCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
     <div class="carousel-inner">
       
       <!-- Slide 0 -->
@@ -94,7 +111,11 @@
               </div>
               <div class="card-footer">
                  <h3>"For any kind of Posidex issue , we are co-ordinating with Pradeep and Hareesh. Both are very supportive and responsive and helping to resolve the issue in quicker manner"</h3>
-              </div>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-AVP</h4></div>
+                 </div>
+                </div>
             </div>
           </div>
         </div>
@@ -121,6 +142,10 @@
               </div>
               <div class="card-footer">
                  <h3>"Excellent support provided by support team. Overall, the assistance has been outstanding, and production issues have been resolved promptly, often within a few hours"</h3>
+                 <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-IT Manager</h4></div>
+                 </div>
               </div>
             </div>
           </div>
@@ -148,6 +173,10 @@
               <div class="card-footer">
                  <h3>"Very much satisfied with the support team and the kind of support being provided by aligned team members.Team is always available as per requirement and sort out the issues in short span of time"</h3>
               </div>
+              <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Senior Manager</h4></div>
+              </div>
             </div>
           </div>
         </div>
@@ -173,38 +202,16 @@
               </div>
               <div class="card-footer">
                  <h3>"Thanks for the outstanding support and Looking Forward Extended Support. we got excellent support from Kumar eeraveni"</h3>
-              </div>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Project Manager</h4></div>
+                </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Slide 5 -->
-      <div class="item">
-        <div class="row">
-        <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <img src="./abhfl.jpg" style="height: 150px;" />
-              </div>
-              <div class="card-footer">
-                <h1><b>ABHFL Customer</b></h1>
-              </div>
-              <div class="card-body">
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-              </div>
-              <div class="card-footer">
-                 <h3>"We got Excellent support from Support team , Response within a TAT , Extended support by Kumar eeraveni for Production issues"</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide 6 -->
       <div class="item">
         <div class="row">
         <div class="col-md-2"></div>
@@ -225,12 +232,46 @@
               </div>
               <div class="card-footer">
                  <h3>"Posidex Support consistently delivered outstanding service, combining excellent accessibility, courteous and knowledgeable team"</h3>
-              </div>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-AVP IT</h4></div>
+                </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Slide 6 -->
+      <div class="item">
+        <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./abhfl.jpg" style="height: 150px;" />
+              </div>
+              <div class="card-footer">
+                <h1><b>ABHFL Customer</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>"We got Excellent support from Support team , Response within a TAT , Extended support by Kumar eeraveni for Production issues"</h3>
+                 <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Project Manager</h4></div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 7 -->
       <div class="item">
         <div class="row">
         <div class="col-md-2"></div>
@@ -251,22 +292,26 @@
               </div>
               <div class="card-footer">
                  <h3>"POSIDEX Support has been an excellent partner for the bank over the last 8 years. We would like to continue our business relationship in the same spirit. They take responsibility immediately and respond to issues as and when needed, even during off hours if needed"</h3>
-              </div>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Project Manager</h4></div>
+                </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Slide 7 -->
+      <!-- Slide 8 -->
       <div class="item">
         <div class="row">
         <div class="col-md-2"></div>
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <img src="./veritas.png" style="height: 150px;" />
+                <img src="./veritas1.jpg" style="height: 150px;" />
               </div>
               <div class="card-footer">
-                <h1><b>veritas</b></h1>
+                <h1><b>Veritas</b></h1>
               </div>
               <div class="card-body">
                 <span class="fa fa-star fa-2x checked"></span>
@@ -277,7 +322,101 @@
               </div>
               <div class="card-footer">
                  <h3>"Excellent support throughout the project. Communication is clear and timelines are always met. We are satisfied with the support provided by the Posidex Support team"</h3>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Deputy Manager</h4></div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 9 -->
+      <div class="item">
+        <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./ghfl.jpg" style="height: 150px;" />
               </div>
+              <div class="card-footer">
+                <h1><b>GHFL</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>"Thanks for the outstanding support and Looking Forward Extended Support"</h3>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Assistant Manager</h4></div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 10 -->
+      <div class="item">
+        <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./bsli.jpg" style="height: 150px;" />
+              </div>
+              <div class="card-footer">
+                <h1><b>ABSLI</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>"Thank you kumar, Hareesh, Chitra and entire SSDR team of posidex for your timely help and support"</h3>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Application Manager</h4></div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 11 -->
+      <div class="item">
+        <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <img src="./ujjivan.jpg" style="height: 150px;" />
+              </div>
+              <div class="card-footer">
+                <h1><b>Ujjivan</b></h1>
+              </div>
+              <div class="card-body">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x"></span>
+                <span class="fa fa-star fa-2x"></span>
+              </div>
+              <div class="card-footer">
+                 <h3>Much improvement needed in responding to the calls since POSIDEX is a very crucial system for us. Otherwise team is good. They have helped us during critical issues"</h3>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-3"><h4>-Senior Manager</h4></div>
+                </div>
+                </div>
             </div>
           </div>
         </div>
