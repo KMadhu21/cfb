@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client Ratings</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+
+    * {
+      text-align: center;
+    }
+      body {
+          background: #f5f7fa;
+          padding-top: 20px;
+      }
+
+      /* Row slide-in animation */
+      @keyframes slideRow {
+          0% { transform: translateX(-60px); opacity: 0; }
+          100% { transform: translateX(0); opacity: 1; }
+      }
+      .row {
+          animation: slideRow 1s ease-out;
+      }
+
+      /* Bounce + Fade animation */
+      @keyframes fadeInBounce {
+          0% { opacity: 0; transform: translateY(40px) scale(0.85); }
+          50% { opacity: 1; transform: translateY(-10px) scale(1.03); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+
+      /* Card styling */
+      .rating-card {
+          border: 1px solid #ddd;
+          border-radius: 12px;
+          padding: 20px;
+          text-align: center;
+          margin-bottom: 25px;
+          background: #fff;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+          opacity: 0;
+          animation: fadeInBounce 1s forwards;
+          transition: all 0.3s ease;
+          height:210px
+      }
+
+      /* Hover effect */
+      .rating-card:hover {
+          transform: translateY(-12px) scale(1.05);
+          box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+      }
+
+      /* Logo */
+      .rating-card img {
+          height: 70px;
+          margin-bottom: 10px;
+          transition: all 0.4s ease;
+      }
+
+      .rating-card:hover img {
+          transform: scale(1.18) rotate(-2deg);
+      }
+
+      /* Stars */
+      .checked {
+          color: orange;
+      }
+      .carousel-control.left,
+    .carousel-control.right {
+      background-image: none;
+      color: #000;
+      font-size: 30px;
+      top: 45%;
+    }
+
+      /* Star Glow + Pulse Animation */
+      @keyframes starPulse {
+          0% { opacity: 0.6; transform: scale(1); }
+          100% { opacity: 1; transform: scale(1.23); }
+      }
+
+      .rating-stars span {
+          font-size: 22px;
+          animation: starPulse 1.6s infinite alternate ease-in-out;
+      }
+
+/*cele*/
+
+  </style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+   <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <h1><b>Customer Ratings 2025</b></h1>
+    </div>
+    <div class="col-md-2">
+      <img src="./p4.png" style="width: 200px;" />
+    </div>
+  </div>
+  <br><br>
+
+    <!--1st row-->
+    <div id="cardCarousel" class="carousel slide" data-ride="carousel" data-interval="65000">
+    <div class="carousel-inner">
+       <!-- Slide 0 -->
+    <div class="item active">
+    <div class="row">
+
+        <!-- 1st Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./tvs1.png" alt="">
+                <h4><b>TVS</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./pnb.jpg" alt="">
+                <h4><b>PNBHFL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./clix.png" alt="">
+                <h4><b>CLIX CAPITAL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 4 Client -->
+        <div class="col-md-2 ">
+            <div class="rating-card">
+                <img src="./ambit.png" alt="">
+                <h4><b>AMBIT</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 5 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./abhfl.jpg" alt="">
+                <h4><b>ABHFL CUSTOMER</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 6 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./pfl.jpg" alt="">
+                <h4><b>PFL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+         <!--2nd row-->
+    <div class="row">
+
+        <!-- 1st Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./apb.jpg" alt="">
+                <h4><b>APB</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./ghfl.jpg" alt="">
+                <h4><b>GHFL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./veritas2.jpg" alt="">
+                <h4><b>VERITAS</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 4 Client -->
+        <div class="col-md-2 ">
+            <div class="rating-card">
+                <img src="./ujjivan.jpg" alt="">
+                <h4><b>UJJIVAN</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 5 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./bsli.jpg" alt="">
+                <h4><b>BSLI</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 6 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./kli.png" alt="">
+                <h4><b>KLI</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Add more clients here -->
+
+    </div>
+    <!--slide end-->
+
+    <!--2ndd slide start-->
+
+    <div class="item">
+    <div class="row">
+
+        <!-- 1st Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./icici.png" alt="">
+                <h4><b>ICICI PruLife</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./hdfc1.webp" alt="">
+                <h4><b>HDFC Limited</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./abhfl.jpg" alt="">
+                <h4><b>ABHFL Propex</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 4 Client -->
+        <div class="col-md-2 ">
+            <div class="rating-card">
+                <img src="./bajaj_fin.png" alt="">
+                <h4><b>BFL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 5 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./l&t.jpg" alt="">
+                <h4><b>L&T</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 6 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./jsfb.webp" alt="">
+                <h4><b>JSFB</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+         <!--2nd row-->
+    <div class="row">
+
+        <!-- 1st Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./hdb.jpg" alt="">
+                <h4><b>HDB</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./chola.webp" alt="">
+                <h4><b>CHOLA</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./bajaj_credit.jpg" alt="">
+                <h4><b>BACL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 4 Client -->
+        <div class="col-md-2 ">
+            <div class="rating-card">
+                <img src="./hdfc_securites.jpg" alt="">
+                <h4><b>HDFC Securities</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 5 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./bajaj auto.jpg" alt="">
+                <h4><b>BAJAJ Auto</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 6 Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./lic1.png" alt="">
+                <h4><b>LIC</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <!--slide end-->
+    <!--3rd slide start-->
+
+    <div class="item">
+    <div class="row">
+
+        <!-- 1st Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./usfb.webp" alt="">
+                <h4><b>UNITY SFB</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Client -->
+        <div class="col-md-2">
+            <div class="rating-card">
+                <img src="./abfl.webp" alt="">
+                <h4><b>ABFL</b></h4>
+
+                <div class="rating-stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- JS to Add Sequential Animation Delay -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    function applyCardAnimation() {
+        // get ONLY cards inside active slide
+        let cards = document.querySelectorAll(".item.active .rating-card");
+
+        cards.forEach((card, index) => {
+            card.style.animation = "none";        // reset animation
+            card.offsetHeight;                   // force reflow
+            card.style.animation = "";           // allow new animation
+            card.style.animationDelay = (index * 5) + "s";  // 1 sec delay per card
+        });
+    }
+
+    // Apply on page load
+    applyCardAnimation();
+
+    // Apply again every time carousel slide changes
+    $('#cardCarousel').on('slid.bs.carousel', function () {
+        applyCardAnimation();
+    });
+
+});
+</script>
+<script>
+  // When the appreciation carousel finishes the last slide, redirect back to index.html
+  $('#cardCarousel').on('slid.bs.carousel', function () {
+      let totalItems = $(this).find('.item').length;
+      let currentIndex = $(this).find('.item.active').index() + 1;
+
+      if (currentIndex === totalItems) {
+          setTimeout(() => {
+              window.location.href = "index.html"; 
+          }, 10000);
+      }
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
